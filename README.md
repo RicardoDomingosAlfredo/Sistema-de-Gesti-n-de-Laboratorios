@@ -1,39 +1,38 @@
-# Sistema de Gestión de Laboratorio
+# Sistema de Gestión de Laboratorios
 
-Este proyecto es un sistema de gestión de laboratorios desarrollado en HTML, CSS y JavaScript para el frontend, con soporte para una base de datos relacional en el backend. El sistema permite gestionar laboratorios, materiales y reservas, brindando una experiencia sencilla e intuitiva para los usuarios.
+Este proyecto es un sistema diseñado para la gestión de laboratorios. Permite a los usuarios autenticarse, crear y gestionar reservas de equipos, y realizar búsquedas de los elementos registrados en el sistema. Incluye funcionalidades modernas de autenticación y seguridad.
 
-## Características Principales
-- **Gestión de Usuarios:**
-  - Registro e inicio de sesión.
-  - Validación de credenciales.
+## Características
 
-- **Gestión de Laboratorios:**
-  - Registro de laboratorios y materiales disponibles.
-  - Visualización y limpieza de los datos registrados.
+### Autenticación
+- **Registro de usuarios**: Permite crear cuentas nuevas con credenciales únicas.
+- **Login con JWT**: Los usuarios inician sesión y obtienen un token para acceder a las rutas protegidas.
+- **Protección de rutas**: Solo los usuarios autenticados pueden acceder a ciertas funcionalidades.
 
-- **Sistema de Reservas:**
-  - Registro de reservas vinculadas a laboratorios y fechas específicas.
-  - Notificación en caso de conflicto de reservas.
+### Página Principal de Gestión
+- **Formulario para crear nuevo elemento**: Los usuarios pueden registrar reservas o equipos.
+- **Listado de elementos existentes**: Muestra las reservas o equipos almacenados.
+- **Búsqueda/Filtrado**: Los usuarios pueden buscar elementos específicos según criterios definidos.
 
-- **Notificaciones y Alertas:**
-  - Avisos cuando una sala está ocupada en la fecha seleccionada.
+### Base de Datos
+- **Colección de usuarios**: Almacena la información de los usuarios.
+- **Colección específica**: Almacena información de reservas y equipos.
+- **Relaciones**: Vincula usuarios con los elementos que han reservado o creado.
 
-- **Eliminación de Reservas:**
-  - Opciones para eliminar registros específicos o limpiar todas las reservas.
+---
 
 ## Tecnologías Utilizadas
-- **Frontend:**
-  - HTML5
-  - CSS3
-  - JavaScript
+- **Backend**: Node.js, Express
+- **Base de Datos**: MongoDB con Mongoose
+- **Autenticación**: JWT (JSON Web Tokens)
+- **Frontend**: HTML, CSS, y opcionalmente React
 
-- **Backend:**
-  - Base de datos relacional (MySQL, SQLite o PostgreSQL).
+---
 
-## Uso
-1. Iniciar sesión o registrarse como nuevo usuario.
-2. Navegar al panel de gestión para agregar laboratorios y materiales.
-3. Verificar disponibilidad y registrar reservas.
-4. Consultar o eliminar reservas según sea necesario.
+## Requisitos del Sistema
+1. Node.js (versión 14 o superior)
+2. MongoDB (versión 4.0 o superior)
+
+---
 
 
