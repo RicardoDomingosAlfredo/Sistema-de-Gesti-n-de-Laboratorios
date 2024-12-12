@@ -3,6 +3,13 @@
 Este proyecto es un sistema diseñado para la gestión de laboratorios. Permite a los usuarios autenticarse, crear y gestionar reservas de equipos, y realizar búsquedas de los elementos registrados en el sistema. Incluye funcionalidades modernas de autenticación y seguridad.
 
 ## Características
+-Registrar salas de labortorio
+-Listar las salas
+-Gestionar 
+-Consultar disponibilidad
+-Login
+-Logout
+-Eliminar reservas 
 
 ### Autenticación
 - **Registro de usuarios**: Permite crear cuentas nuevas con credenciales únicas.
@@ -22,10 +29,10 @@ Este proyecto es un sistema diseñado para la gestión de laboratorios. Permite 
 ---
 
 ## Tecnologías Utilizadas
-- **Backend**: Node.js, Express
+- **Backend**: Node.js
 - **Base de Datos**: MongoDB con Mongoose
 - **Autenticación**: JWT (JSON Web Tokens)
-- **Frontend**: HTML, CSS, y opcionalmente React
+- **Frontend**: HTML, CSS, javascript
 
 ---
 
